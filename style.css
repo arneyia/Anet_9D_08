@@ -18,13 +18,63 @@ nav a{
     padding: 15px 30px;
     text-decoration: none;
     color: beige;
+    display: inline-block;
+    transition: transform 0.3s ease,  background-color 0.9s ease;
+    border-radius: 5px;
 }
+nav a:hover {
+    transform: translateY(-5px);
+    background-color: rgb(105, 82, 46);
+}
+.home {
+    background-color: #fff8f0;
+    padding: 60px 10%;
+  }
+  .home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .home-image img {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  .home-text {
+    max-width: 450px;
+  }
+  .home-text h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: beige;
+  }
+  .home-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: beige;
+    background-color: burlywood;
+  }
+  .asee {
+    background-color: burlywood;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  .asee:hover {
+    background-color: rgb(105, 82, 46);
+  }
 section.home{
-    background: url("toko.webp");
+    height: 650px;
+    background: url(toko.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 600px;
     padding-top: 100px;
 }
 section.home div{
@@ -36,17 +86,6 @@ section.home div{
 }
 section.home .welcome{
     font-size: 30px;
-}
-section.home a{
-    color: beige;
-    padding: 10px 20px;
-    text-decoration: none;
-    box-shadow: 0px 0px 3px;
-    border-radius: 20px;
-    transform: 5s;
-}
-.Desc{
-    background-color: burlywood;
 }
 section.about{
     background-color: burlywood;
@@ -352,15 +391,20 @@ section.contact .card img{
     width: 200px;
 }
 footer{
-    background-color: rgb(105, 82, 46);
+    background-color: white;
     height: 50px;
+    
 }
 footer .medsos{
     text-align: center;
     padding-top: 10px;
 }
 footer .medsos a{
-    color: white;
+    color: rgb(105, 82, 46);
     font-size: 20px;
     padding: 5px 20px;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
 }
